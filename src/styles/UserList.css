@@ -1,0 +1,86 @@
+.user-list {
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+
+.user-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.user-list li {
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.user-list li:hover {
+  background-color: #f0f0f0;
+  box-shadow: 0 0 10px rgba(34, 83, 143, 0.1);
+}
+
+.user-list li.column-titles {
+  font-weight: bold;
+  background-color: #022431;
+  color: #fff;
+}
+
+.user-list li.selected {
+  background-color: #808080;
+}
+
+.user-list-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.action-button {
+  padding: 8px 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.action-button.delete {
+  background-color: #dc3545;
+}
+
+.action-button.edit {
+  background-color: #0741ffd1;
+}
+
+.action-button.save {
+  background-color: #28a745;
+}
+
+.action-button.delete-bulk {
+  background-color: #dc3545;
+  padding: 8px 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.user-list span {
+  flex: 1;
+  padding: 0 5px;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.user-list input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.user-list input[type="text"] {
+  width: 100%;
+}
